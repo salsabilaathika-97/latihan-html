@@ -13,7 +13,6 @@ body {
     font-weight: 400;
     letter-spacing: 0;
     padding: 1rem;
-    text-rendering: optimizeLegibility;
 }
 
 .tree-card {
@@ -27,6 +26,7 @@ body {
 .branch-card {
     display: flex;
     padding: 1rem;
+    flex-wrap: wrap;
     @media(min-width: 40rem) {
       width: 50%;
     }
@@ -41,7 +41,9 @@ body {
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: auto;
+    width: 250px;
+    margin: 10px;
 }
 
 .card-content {
@@ -49,6 +51,7 @@ body {
     flex: 1 1 auto;
     flex-direction: column;
     padding: 1rem;
+    height: auto;
 }
 
 .card-title {
@@ -57,13 +60,13 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .card-text {
     flex: 1 1 auto;
     font-size: 0.875rem;
     line-height: 1.5;
-    margin-bottom: 1.25rem;
 }
  
 .card-image {
